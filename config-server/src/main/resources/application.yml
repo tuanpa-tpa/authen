@@ -5,7 +5,7 @@ spring:
     config:
       server:
         git:
-          uri: ${user.dir}/conf/config-repository-copy
+          uri: https://github.com/tuanpa-tpa/authen/tree/main/conf/config-repository-copy
           default-label: main # or origin
       enabled: true
   security:
