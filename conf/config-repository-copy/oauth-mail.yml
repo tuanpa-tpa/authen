@@ -1,0 +1,22 @@
+spring.config.activate.on-profile: mail
+my-spring:
+  mail:
+    host: <your smtp host>
+    port: 587
+    username: <your email username>
+    password: <your email account password>
+    properties:
+      mail:
+        smtp:
+          auth: true
+          connection-timeout: 5000
+          timeout: 5000
+          write-timeout: 5000
+          starttls:
+            enable: false
+    retry:
+      initial-interval-ms: 1000
+      max-interval-ms: 10000
+      multiplier: 2.0
+      maxAttempts: 3
+      sleep-time-ms: 2000
