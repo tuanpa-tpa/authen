@@ -5,8 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: C:\Users\Pham Anh Tuan\Desktop\Oauth2-Authorization-Project-master\conf\config-repository
-          default-label: v2 # or origin
+          uri: ${user.dir}/conf/config-repository
+          default-label: main # or origin
       enabled: true
   security:
     user:
