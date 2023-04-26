@@ -19,7 +19,7 @@ application:
       validator:
         validate-url: ${application.info.host}/verification/{path}/{token}
       fall:
-        service: redis # redis or memory
+        service: memory # login failures will be saved on memory
         max-attempt: 10
         expire-after:
           duration: 1
